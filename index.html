@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Employee tracker</title>
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<style>
+			body{
+				margin: auto;
+			}
+			form{
+				padding: 10px
+			}
+
+		</style>
+	</head>
+	<body >
+		<div class="container">
+			<header class="jumbotron">
+				<h2 class="display-3" >Train Schedule</h2>
+			</header>
+			<div class=" col-lg-10">
+				<div class="table card">
+					<div class="card-header">
+						<h3>Current Time Schedule</h3>
+					</div>
+					<div class="card-block">
+						<table class="table table-hover">
+							<thead class=" table-success">
+								<th>Train Name</th>
+								<th>Destination</th> 
+								<th>Frequency(min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</thead>
+
+							<tbody id="tbody">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="col-lg-6">
+				<div class="card">
+
+					<h3 class="card-header">Add Train</h3>
+
+					<div class="card-block">
+						<form action="">
+							<div class="form-group">
+								<label for="name">
+									Train Name</label>
+								<input class="form-control" id="name" type="text">
+
+							</div>
+							<div class="form-group">
+								<label for="destination">
+									Destination</label>
+								<input class="form-control" id="destination" type="text">
+
+							</div>
+							<div class="form-group">
+								<label for="firstTrain">
+									First Train Time(HH:MM-military time)</label>
+								<input class="form-control" id="firstTrain" >
+
+							</div>
+							<div class="form-group">
+								<label for="frequency">
+									Frequency (min)</label>
+								<input class="form-control" id="frequency" type="number">
+
+							</div>
+							<div class="form-group">
+								<button type="submit" id="submit"> Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<script src="assets/js/moment.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</body>
+
+</html>
